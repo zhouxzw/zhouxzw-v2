@@ -1,0 +1,133 @@
+@import "variables";
+@import "./breakpoints";
+
+
+
+.ProjectInfoContainer{
+
+    width: 95%;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #ADB5BD;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid $borderColor;
+    text-align: center;
+
+    .title{
+        font-size: 32px;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: column;
+
+        .headerInfo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.7rem;
+            font-size: $infoSize;
+            letter-spacing: 1.2px;
+
+            .overviewTitle{
+                margin-top: 12px;
+                font-weight: bold;
+                font-size: $numberSize;
+                
+            }
+        }
+
+        .overview{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.5rem;
+            text-align: justify;
+            font-size: $infoSize;
+            line-height: 24px;
+
+
+        }
+
+        .techStack{
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            
+            span{
+                margin-top: 0.7rem;
+                margin-right: 1rem;
+                color: $accent;
+                padding: 3px 5px 3px 5px;
+                border: 1px solid #ADB5BD;
+            }
+        }
+
+        .gallary{
+            margin-top: 3rem;
+            font-weight: bold;
+        
+            
+            .videoContainer{
+                margin-top: 1.5rem;
+                .video{
+                    height: 300px;
+                }
+                
+            }
+            
+            span{
+                font-size: $numberSize;
+            }
+
+            .imageContainer{
+                position: relative;
+                width: 100%;
+                margin-top: 1rem;
+                
+                
+                .image{
+                    width: 100%;
+                    height: 100%;
+                    position: relative !important;
+                    object-fit: contain;
+            
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media(min-width: $breakpoint-md){
+
+
+    .ProjectInfoContainer{
+
+        .section{
+            width: 80%;
+        }
+        .gallary{
+            margin-top: 5rem;
+
+            .imageContainer{
+                height: 60vh !important;
+            }
+
+            .videoContainer{
+                margin-top: 1.5rem;
+                .video{
+                    height: 400px !important;
+                }
+                
+            }
+            
+        }
+    }
+}

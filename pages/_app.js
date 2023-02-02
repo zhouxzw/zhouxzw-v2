@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <main className={inter.className}>
+      <Component {...pageProps} />
+    </main>
+  );
 }
 
-export default MyApp
+export default MyApp;

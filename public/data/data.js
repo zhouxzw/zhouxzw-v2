@@ -1,0 +1,91 @@
+const nailStyle = {
+  title: "NAILSTYLE",
+  infoOne: "PERSONAL",
+  infoTwo: "Nail Salon Booking System",
+  image: "/images/nailstylelogo.png",
+  desc: "NailStyle is a web application where customers can book appointments to get their nails done! Nailstyle also includes an admin panel where owners can access previous customer visits, upcoming bookings, weekly revenue and more.",
+  routeName: "nailstyle",
+  route: "/project/nailstyle",
+  techStack: ["React.js", "Node.js", "Express.js", "MongoDB"],
+  gallary: [
+    "/images/services.png",
+    "/images/booking.png",
+    "/images/calendar.png",
+    "/images/admin-customer.png",
+    "/images/appointment.png",
+  ],
+  videos: [],
+  overview:
+    "The initial idea for this project came about from a friend who is working in the nail tech industry. He might open his own salon one day so my friend and I wanted to build a final project where we develop a nail appointment scheduling web application for our friend. This final project was developed with all the skills and techniques we have learned throughout our university journey. Overall I really enjoyed the development of this project since it was our first experience into React.js",
+};
+
+const menji = {
+  title: "MENJI",
+  infoOne: "CPSC481",
+  infoTwo: "Database Management System",
+  image: "/",
+  desc: "Database management final project tasked with building custom API endpoints to retrieve/post data to a database and build a simple interactive front-end interface.",
+  routeName: "menji",
+  techStack: ["JQuery", "Node.js", "Express.js", "Bootstrap", "MongoDB"],
+  gallary: [
+    "/images/footwear.png",
+    "/images/pants.png",
+    "/images/cart.png",
+    "/images/cart2.png",
+    "/images/inventory.png",
+    "/images/login.png",
+  ],
+  route: "/project/menji",
+  videos: [],
+  overview:
+    "Our project proposal was to build a simple E-commerce style web application with simple user interactions. Before any development began we were tasked with mapping an entity-relationship and relational modal diagram to map our database design. We were allowed to use any database technology and having no prior experience in databases we decided to use MongoDB as NoSQL databases peaked our interest.",
+};
+
+const makeapp = {
+  title: "MAKEAPP",
+  infoOne: "CPSC575",
+  infoTwo: "iProgramming Creative Minds",
+  image: "/",
+  desc: "iOS programming project tasked with building a mobile app. Our project proposal was to develop a social media platform where users could upload their make up routines. Our app has the main functionality where users can create a post and upload pictures or videos, showcasing step-by-step of their makeup routine.",
+  routeName: "makeapp",
+  techStack: ["JQuery", "Node.js", "Express.js", "Bootstrap", "MongoDB"],
+  gallary: [],
+  route: "/project/makeapp",
+  videos: ["https://www.youtube.com/embed/4AqHY7XUyAM"],
+  overview:
+    "The main goal for this project was to develop a platform for people to explore step-by-step makeup routines or to create routines to share with other enthusiasts! Users can browse the inspo page for routines and if a user taps on a post, it will bring up a more detailed post. Users are also able to create a post by uploading pictures/videos with step-by-step descriptions. This project was very ambitious and our professor suggested we get the core functionality down before focusing on the design aspect. Overall the final proudct looks different than our intended design but it is functional.",
+};
+
+const nbachart = {
+  title: "NBA CHART",
+  infoOne: "Information Visualization",
+  infoTwo: "CPSC583",
+  image: "/",
+  desc: "Data visualization project tasked with building a interactive visualization. The data set we chose was related to NBA players and their shooting statistics. The interactive parts include filtering by specific teams, west or east conference and FT or 3PT.",
+  routeName: "nba-chart",
+  techStack: ["D3.js"],
+  gallary: ["/images/nba2.png", "/images/nba3.png", "/images/nba4.png"],
+  route: "/project/nba-chart",
+  videos: [],
+  overview:
+    "The goal of this project was to visualize a NBA dataset between NBA players shooting percentages on their team versus other teams. The size of bubble represents the average points made by that player. Interactive functions include the ability to filter by specific teams, west or east conference and three point or free throw shooting percentage. The last interactive function is users can hover over a bubble to see the player name.",
+};
+
+const radiantbot = {
+  title: "RADIANT BOT",
+  infoOne: "PERSONAL",
+  infoTwo: "Valorant Random Agent Generator",
+  image: "/images/valologo.png",
+  desc: "Valorant agent randomizer discord application built for a group of friends using Discord.js",
+  routeName: "radiant-bot",
+  techStack: ["Node.js", "Discord.js"],
+  gallary: ["/images/bot.png"],
+  route: "/project/radiant-bot",
+  videos: [],
+  overview:
+    "Simple discord application that I decided to build for my friends and I. Everyone is always having a hard time choosing which agent to play so we let this bot generate a random agent for us! This project is currently hosted on Heroku and feel free to clone the repo and use it in your own server! Get an api-key from discord developer portal and create an .env file and add TOKEN=`api-key` in the .env file.",
+};
+
+const projects = [nailStyle, menji, makeapp, nbachart, radiantbot];
+
+export default projects;

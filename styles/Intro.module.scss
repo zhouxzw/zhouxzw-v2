@@ -1,0 +1,44 @@
+@import "variables";
+@import "./breakpoints";
+
+
+.introContainer{
+
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    font-size: $infoSize;
+
+
+    .intro{
+        width: 95%;
+        background-color: white;
+        padding: 15px;
+        border: 1px solid $borderColor;
+        letter-spacing: 1px;
+        line-height: 30px;
+        text-align: justify;
+        color: black
+        
+    }
+}
+
+@media(min-width: $breakpoint-md){
+
+    .introContainer {
+        margin-top: 0;
+        margin-left: 5rem;
+
+        .intro{
+            padding: 4rem;
+            width: 100%;
+        
+        }
+
+    }
+}
+

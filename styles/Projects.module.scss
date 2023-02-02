@@ -1,0 +1,122 @@
+
+@import "variables";
+@import "./breakpoints";
+
+
+
+
+
+
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    z-index: 1;
+    margin-top: 2rem;
+    scroll-margin-top: 90px;
+
+
+
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2rem;
+
+
+
+        
+        .projectInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding: 1rem;
+            border: 1px solid $borderColor;
+            text-align: center;
+
+            &:hover{
+                cursor: pointer;
+                .title::before{
+                    width: 100%;
+                }
+            }
+              
+    
+        }
+        .title {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;    
+            font-size: $titleSize;
+            &::before{
+                position: absolute;
+                content: attr(data-content);
+                top: 0;
+                left: 0;
+                color: $accent;
+                overflow: hidden;
+                transition: width 250ms ease;
+                width: 0;
+                white-space: nowrap;
+            }
+        }
+
+        .headerInfo {
+            display: flex;
+            flex-direction: column;
+            margin-top: 0.7rem;
+            font-size: $infoSize;
+            letter-spacing: 1.2px;
+        }
+
+        .projectNumber {
+            display: flex;
+            margin-top: 0.7rem;
+            margin-bottom: 0.7rem;
+
+            .ptitle{
+                margin-right: 6px;
+                letter-spacing: 0.6px;
+                font-size: $projectSize;
+            }
+            .pnum{
+                background-color: $accent;
+                color: white;
+                padding: 1px 13px 1px 13px;
+                font-size: $infoSize
+            }
+        }
+
+        .projectSummary{
+            padding: 0 1rem 1rem 1rem;
+            margin-top: 2rem;
+            text-align: justify;
+            font-size: $infoSize;
+            line-height: 24px;
+        }
+    }
+
+}
+
+
+@media(min-width: $breakpoint-md){  
+    .projectsContainer{
+        margin-left: 5rem;
+        margin-top: 5rem;
+        width: 100%;
+
+        .projectContainer {
+            margin-bottom: 4rem;
+
+        }
+    }
+
+    .projectSummary{
+        display: flex;
+        width: 80%;
+    }
+
+    
+}

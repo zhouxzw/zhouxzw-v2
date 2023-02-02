@@ -1,0 +1,90 @@
+@import "variables";
+@import "./breakpoints";
+
+.outerContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    background-color: $primary;
+    
+
+}
+
+
+.innerContainer {
+    width: 100%;
+    
+    @media(min-width: $breakpoint-xxl){
+
+        width: 1600px;
+    }
+}
+
+.main {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    width: 100%;
+    position: relative;
+    
+
+    @media(min-width: $breakpoint-md){
+        align-items: center;
+    }
+
+}
+
+.mainContent{
+    z-index: 1;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.backgroundImageWrapper{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backgroundImageContainer{
+    position: fixed;
+    background-color: $primary;
+    transform: translateY(-200px);
+    
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(min-width: $breakpoint-md){
+
+    .contentContainer {
+        flex-direction: row;
+        width: 85%;
+        min-height: calc(100vh - 65px);
+        margin-top: 10rem;
+        position: relative;
+
+    }
+
+    .projectsContainers{
+
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+}
+
+.mainContent{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

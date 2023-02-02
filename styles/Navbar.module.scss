@@ -1,0 +1,109 @@
+
+@import "variables";
+@import "./breakpoints";
+
+.navbar {
+    display: flex;
+    background-color:$primary;
+    width: 100%;
+    min-height: 65px;
+    padding: 0 3.5rem 0 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+
+
+    .header {
+        font-weight: 500;
+        letter-spacing: 2px;
+        &:hover{
+            cursor: pointer;;
+        }
+
+    }
+
+    @media(min-width: $breakpoint-xxl){
+        width: 1600px;
+    }
+    
+
+}
+
+.dropDownButton {
+    @media(min-width: $breakpoint-md){
+        display: none;
+    }
+}
+
+
+
+.dropDownMenu{
+    list-style: none;
+    margin-top: -1px;
+
+    li{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+
+    }
+   
+    @media(max-width: $breakpoint-md){
+        
+        /*https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property*/
+        display: block;
+        background-color: $primary;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 65px;
+        width: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+
+        li {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin: 0;
+        }
+
+    }
+
+    @media(min-width: $breakpoint-md){
+        li {
+            padding: 0.5rem 1.5rem;
+            float: left;
+            background-color: $primary;
+            border: 1px solid $primary;
+            transition: all 0.3s ease-out;
+        }
+        li:hover, li:focus {
+            background-color: $primary;
+            border: 1px solid black;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.dropDownMenuOpen {
+    justify-content: flex-end;
+    display: flex;
+    height: auto;
+    z-index: 1;
+    width: 100%;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+
