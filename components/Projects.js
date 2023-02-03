@@ -25,7 +25,7 @@ function Projects(props) {
   return (
     <div className={styles.projectsContainer} id="projects">
       {projects.map((project, i) => {
-        let projectNumber = (i + 1).toLocaleString("en-US", {
+        let projectNumber = (projects.length - i).toLocaleString("en-US", {
           minimumIntegerDigits: 2,
           useGrouping: false,
         });

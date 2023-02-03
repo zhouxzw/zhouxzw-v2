@@ -12,8 +12,6 @@ import ProjectInfo from "../../components/ProjectInfo";
 function project(props) {
   const project = props.project[0];
 
-  console.log(project);
-
   return (
     <div>
       <Head>

@@ -3,6 +3,7 @@ import styles from "../styles/ProjectInfo.module.scss";
 import { Fjalla_One, Abel } from "@next/font/google";
 import Image from "next/image";
 import Iframe from "react-iframe";
+import Link from "next/link";
 const fjalla = Fjalla_One({
   subsets: ["latin"],
   weight: ["400"],
@@ -29,6 +30,22 @@ function ProjectInfo(props) {
           <span className={styles.overviewTitle}>Overview</span>
         </div>
 
+        <div className={styles.links}>
+          {props.project.links.link !== "/" ? (
+            <span>
+              <Link href={props.project.links.link} passHref={true}>
+                Visit
+              </Link>
+            </span>
+          ) : null}
+          {props.project.links.github !== "/" ? (
+            <span>
+              <Link href={props.project.links.github} passHref={true}>
+                Github
+              </Link>
+            </span>
+          ) : null}
+        </div>
         <div className={styles.overview}>{props.project.overview}</div>
         <div className={styles.techStack}>
           {props.project.techStack.map((tech, i) => {

@@ -67,8 +67,27 @@
             }
         }
 
+        .links{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            margin-top: 2rem;
+
+
+            
+            span{
+                border-bottom: 1px solid;
+                &:hover{
+                    color: $accent;
+                    cursor: pointer;
+                }
+            }
+            
+
+        }
+
         .gallary{
-            margin-top: 3rem;
+            margin-top: 2rem;
             font-weight: bold;
         
             
@@ -114,7 +133,7 @@
             width: 80%;
         }
         .gallary{
-            margin-top: 5rem;
+            margin-top: 4rem;
 
             .imageContainer{
                 height: 60vh !important;
