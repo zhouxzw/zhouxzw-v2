@@ -53,6 +53,7 @@ function Projects(props) {
                     width={110}
                     height={64}
                     alt="project thumbnail"
+                    quality={100}
                   ></Image>
                 ) : null}
                 <summary className={`${styles.projectSummary}`}>

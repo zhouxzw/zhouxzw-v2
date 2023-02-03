@@ -16,10 +16,11 @@ function Profile(props) {
   return (
     <div className={styles.profileContainer}>
       <div className={styles.profileDimensions}>
-        <Image src={banner} alt="Green Gif" objectFit="contain" />
+        <Image priority src={banner} alt="Green Gif" objectFit="contain" />
         <div className={styles.profileBody}>
           <div className={styles.profileCircleContainer}>
             <Image
+              priority
               src={profilePicture}
               alt="William Zhou Profile Picture"
               layout="fill"
