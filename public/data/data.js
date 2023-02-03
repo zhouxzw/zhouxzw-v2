@@ -137,7 +137,7 @@ const goldbistro = {
 };
 
 const chahouse = {
-  title: "Cha House",
+  title: "CHA HOUSE",
   infoOne: "FREELANCE",
   infoTwo: "Static Website",
   image: "/",
