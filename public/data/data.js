@@ -70,8 +70,8 @@ const makeapp = {
 
 const nbachart = {
   title: "NBA CHART",
-  infoOne: "Information Visualization",
-  infoTwo: "CPSC583",
+  infoOne: "CPSC583",
+  infoTwo: "Information Visualization",
   image: "/",
   desc: "Data visualization project tasked with building a interactive visualization. The data set we chose was related to NBA players and their shooting statistics. The interactive parts include filtering by specific teams, west or east conference and FT or 3PT.",
   routeName: "nba-chart",
