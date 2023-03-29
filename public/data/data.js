@@ -155,7 +155,31 @@ const chahouse = {
   },
 };
 
+const designerstouch = {
+  title: "DESIGNERS TOUCH",
+  infoOne: "FREELANCE",
+  infoTwo: "Static Website",
+  image: "/",
+  desc: "Static website built for a client that is in the landscaping industry to showcase the client's offerings and services.",
+  routeName: "designerstouch",
+  techStack: ["React.js", "Next.js", "ChakraUI"],
+  gallary: [
+    "/images/designerstouch1.png",
+    "/images/designerstouch2.png",
+    "/images/designerstouch3.png",
+  ],
+  route: "/project/designerstouch",
+  videos: [],
+  overview:
+    "The team at Designers Touch wanted to gain more exposure from the internet and wanted a website for their company. They offer fencing, decking, laser cutting and many more services to local Calgarians.",
+  links: {
+    link: "https://www.designerstouch.ca/",
+    github: "/",
+  },
+};
+
 const projects = [
+  designerstouch,
   goldbistro,
   chahouse,
   nailStyle,
