@@ -10,7 +10,7 @@ function Intro(props) {
         this field. Since graduating I have helped local businesses develop
         static to full stack websites. I hope to expand my knowledge within this
         field and be able to solve complex problems through programming.
-        <p>I am currently open to any web development opportunities!</p>
+        <p>I am currently open to any software development opportunities!</p>
       </article>
     </div>
   );
