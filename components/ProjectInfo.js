@@ -71,7 +71,7 @@ function ProjectInfo(props) {
               <div key={"video" + i} className={styles.videoContainer}>
                 <Iframe
                   className={styles.video}
-                  url="https://www.youtube.com/embed/4AqHY7XUyAM"
+                  url={video}
                   position="relative"
                   width="100%"
                 ></Iframe>

@@ -178,7 +178,27 @@ const designerstouch = {
   },
 };
 
+const chahousepos = {
+  title: "CHA HOUSE POS",
+  infoOne: "FREELANCE",
+  infoTwo: "Point-of-Sale System",
+  image: "/",
+  desc: "Developed a web-based point of sale system utilizing webusb-api to help take customer orders. Software will communicate to thermal printers which will print a customer copy of the receipt and a drink label which is added to a cup.",
+  routeName: "chahousepos",
+  techStack: ["React.js", "AntDesign"],
+  gallary: [],
+  route: "/project/chahousepos",
+  videos: ["https://www.youtube.com/embed/pbLxBBYGXEs?si=SnBPYyM7C3Qs3jDC"],
+  overview:
+    "Cha House located in Polopark Mall. Bubble tea shop serving a vareity of milks teas, fruit teas and slushies. The owners of Cha House asked me to create a point-of-sale system in order cut down on costs and replace their current system with Square.",
+  links: {
+    link: "/",
+    github: "/",
+  },
+};
+
 const projects = [
+  chahousepos,
   designerstouch,
   goldbistro,
   chahouse,
