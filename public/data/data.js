@@ -18,7 +18,7 @@ const nailStyle = {
   overview:
     "The initial idea for this project came about from a friend who is working in the nail tech industry. He might open his own salon one day so my friend and I wanted to build a final project where we develop a nail appointment scheduling web application for our friend. This final project was developed with all the skills and techniques we have learned throughout our university journey. Overall I really enjoyed the development of this project since it was our first experience into React.js",
   links: {
-    link: "https://hxnails.ca/",
+    link: "/",
     github: "https://github.com/zhouxzw/NailStyle",
   },
 };
